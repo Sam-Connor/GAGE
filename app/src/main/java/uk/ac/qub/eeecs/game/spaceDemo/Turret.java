@@ -1,5 +1,7 @@
 package uk.ac.qub.eeecs.game.spaceDemo;
 
+import java.util.Random;
+
 import uk.ac.qub.eeecs.gage.util.SteeringBehaviours;
 import uk.ac.qub.eeecs.gage.engine.ElapsedTime;
 import uk.ac.qub.eeecs.gage.engine.particle.Emitter;
@@ -43,9 +45,11 @@ public class Turret extends SpaceEntity {
 
         maxAcceleration = 0.0f;
         maxVelocity = 0.0f;
-        maxAngularVelocity = 50.0f;
-        maxAngularAcceleration = 50.0f;
-        mBitmap = gameScreen.getGame().getAssetManager().getBitmap("Turret");
+        maxAngularVelocity = 100.0f;
+        maxAngularAcceleration = 100.0f;
+
+        Random random = new Random();
+        mBitmap = gameScreen.getGame().getAssetManager().getBitmap(random.nextBoolean() ? "Turret" : "Turret2");
 
         mRadius = DEFAULT_RADIUS;
         mMass = 10000.0f;

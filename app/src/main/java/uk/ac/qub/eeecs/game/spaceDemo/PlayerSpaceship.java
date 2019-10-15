@@ -66,7 +66,7 @@ public class PlayerSpaceship extends SpaceEntity {
         maxAngularAcceleration = 1440.0f;
 
         mRadius = DEFAULT_RADIUS;
-        mMass = 1000.0f;
+        mMass = 10000.0f;
 
         // Create an offset for the movement emitters based on the size of the spaceship
         mMovementEmitterOffsetLeft = new Vector2(-20.0f, 20.0f);

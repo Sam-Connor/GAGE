@@ -46,6 +46,11 @@
       "file": "img/Turret.png"
     },
     {
+      "type": "Bitmap",
+      "name": "Turret2",
+      "file": "img/Turret2.jpg"
+    },
+    {
       "type": "Music",
       "name": "SpaceBackgroundMusic",
       "file": "sound/InPursuitOfSilence.mp3"
